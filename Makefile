@@ -1,4 +1,4 @@
-VERSION := 1.11.1
+VERSION := 1.11.2
 
 ARCHIVE  := docker-$(VERSION).tgz
 HASH     := docker-$(VERSION).hash
