@@ -1,4 +1,4 @@
-VERSION := 1.12.6
+VERSION := 1.13.1
 
 ARCHIVE  := docker-$(VERSION).tgz
 HASH     := docker-$(VERSION).hash
@@ -6,6 +6,7 @@ BINARIES := docker/bundles/$(VERSION)/binary-client/docker \
 	docker/bundles/$(VERSION)/binary-daemon/docker-containerd \
 	docker/bundles/$(VERSION)/binary-daemon/docker-containerd-ctr \
 	docker/bundles/$(VERSION)/binary-daemon/docker-containerd-shim \
+	docker/bundles/$(VERSION)/binary-daemon/docker-init \
 	docker/bundles/$(VERSION)/binary-daemon/docker-proxy \
 	docker/bundles/$(VERSION)/binary-daemon/docker-runc \
 	docker/bundles/$(VERSION)/binary-daemon/dockerd
