@@ -1,4 +1,5 @@
-VERSION := 1.13.1
+GITHASH := 3a232c8
+VERSION := 17.03.0-ce
 
 ARCHIVE  := docker-$(VERSION).tgz
 HASH     := docker-$(VERSION).hash
@@ -24,7 +25,7 @@ $(ARCHIVE): $(BINARIES)
 	tar zcvf docker-$(VERSION).tgz -C docker/bundles/$(VERSION)/ docker
 
 $(BINARIES): | docker
-	cd docker && git fetch && git checkout v$(VERSION)
+	cd docker && git fetch && git checkout $(GITHASH)
 	$(MAKE) -C docker binary
 
 docker:
